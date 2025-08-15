@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Charity</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .hero {
+            background-color: #007bff;
+            color: white;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+            .hero h1 {
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+
+        .section-padding {
+            padding: 50px 0;
+        }
+
+        .cta {
+            background-color: #28a745;
+            color: white;
+            padding: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Helping Hands Charity</h1>
+            <p class="lead">Together, we can make a difference in our community.</p>
+            <a href="/Account/Register" class="btn btn-light btn-lg mt-3">Join Us</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <h2 class="mb-4">About Us</h2>
+            <p>
+                Helping Hands Charity is dedicated to supporting underprivileged communities through education,
+                healthcare, and social development programs. Our mission is to empower individuals and families
+                to achieve a better quality of life.
+            </p>
+            <p>
+                We organize fundraising events, volunteer programs, and donation drives to help those in need.
+            </p>
+            <a href="/Contact" class="btn btn-primary mt-3">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta text-center">
+        <div class="container">
+            <h2>Get Involved</h2>
+            <p class="lead">Your support can change lives. Donate or volunteer today!</p>
+            <a href="/Donate" class="btn btn-light btn-lg me-2">Donate</a>
+            <a href="/Volunteer" class="btn btn-warning btn-lg">Volunteer</a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
